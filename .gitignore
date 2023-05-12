@@ -1,0 +1,9 @@
+# C++ executables
+*.out
+# Tex generated files
+*.aux
+*.log
+*.nav
+*.snm
+*.toc
+*.pdf
