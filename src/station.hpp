@@ -28,13 +28,14 @@ class Station {
 	  m_queue.push_back(train);
 	}
 
-	// Overload istream operator
+	bool operator==(const Station& other) const {
+	  return (this->m_capacity == other.m_capacity && this->m_delay == other.m_delay);
+	}
 	friend std::istream& operator>>(std::istream& is, Station& station) {
 	  is >> station.m_capacity;
 	  is >> station.m_delay;
 	  return is;
 	}
-	// Overload ostream operator
 	friend std::ostream& operator<<(std::ostream& os, Station const& station) {
 	  os << "Capacity=" << station.m_capacity << ", Delay=" << station.m_delay << "\n";
 	  return os;
