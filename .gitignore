@@ -7,3 +7,7 @@
 *.snm
 *.toc
 *.pdf
+# Python things
+__pycache__
+# micellaneous
+test*
