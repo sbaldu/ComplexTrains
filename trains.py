@@ -26,5 +26,3 @@ with open("./data/trains.txt", 'w') as fp: # maybe it is better to use a json fi
                             fp.write('{}|{}\n'.format(category,number))
                 except:
                     pass
-
-#  77%|████████████████████████████████████████████████████████████▍                  | 327/427 [2:14:31<41:08, 24.68s/it]
